@@ -78,7 +78,6 @@ impl<T> LinkedList<T> {
         let mut node_a = list_a.start;
         let mut node_b = list_b.start;
 
-
         while let (Some(a), Some(b)) = (node_a, node_b) {
             let val_a = unsafe { a.as_ref().val };
             let val_b = unsafe { b.as_ref().val };
